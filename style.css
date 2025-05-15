@@ -1,0 +1,109 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #A82453; /* Pantone P 69-16 C */
+  margin: 0;
+  padding: 20px;
+  
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: hsl(343, 14%, 90%) 0px 0px 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #A82453;
+}
+
+.add-activity input,
+.add-activity textarea,
+.add-activity select {
+  width: 100%;
+  padding: 8px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.add-activity button {
+  background-color: #A82453;
+  color: white;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-activity button:hover {
+
+  background: linear-gradient(90deg, #A82453, #ba7979, #A82453);
+  background-size: 200%;
+  transition: background-position 0.5s;
+  background-position: right;
+  color:rgb(230, 159, 159)
+}
+
+.activity-lists {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  
+}
+
+.activity-lists div {
+  width: 48%;
+  
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  color: #A82453;
+}
+
+li {
+  background-color: #f4f9fd;
+  margin: 8px 0;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.progress {
+  margin-top: 20px;
+ 
+}
+
+.progress-bar {
+  width: 100%;
+  height: 20px;
+
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #e0e0e0;
+  box-shadow: hsl(326, 5%, 73%) 0px 0px 5px;
+}
+
+#progressFill {
+  height: 100%;
+  width: 0%;
+  background-color: #A82453;
+  transition: width 0.3s;
+}
+#clock {
+  font-family: 'Courier New', Courier, monospace;
+  color: #A82453; /* Pantone P 69-16 C-ish blue */
+}
+
+button {
+  font-size: 14px;
+}
+
+button:hover {
+  opacity: 0.7;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ITM Growth Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+
+  <div class="container">
+    <h1>📘 ITM Growth Tracker <div id="clock" style="text-align: center; font-size: 24px; margin: 20px 0; font-weight: bold; color:black;">
+  Time: --
+</div></h1>
+
+    <div class="add-activity">
+      <h2>Add New Activity</h2>
+      <input type="text" id="activityName" placeholder="Activity Name" />
+      <textarea id="activityDesc" placeholder="Description"></textarea>
+      <select id="activityType">
+        <option value="Workshop">Workshop</option>
+        <option value="Assignment">Assignment</option>
+        <option value="Project">Project</option>
+      </select>
+      <button onclick="addActivity()">Add Activity</button>
+    </div>
+
+    <div class="activity-lists">
+      <div class="pending">
+        <h2>Pending Activities</h2>
+        <ul id="pendingList">
+          <li>No pending activities. Great job!</li>
+        </ul>
+      </div>
+
+      <div class="completed">
+        <h2>Completed Activities</h2>
+        <ul id="completedList">
+        </ul>
+      </div>
+    </div>
+
+    
+    <div class="progress">
+      <h2>Overall Progress</h2>
+      <p id="progressText">0 of 0 activities completed</p>
+      <div class="progress-bar"><div id="progressFill"></div></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
